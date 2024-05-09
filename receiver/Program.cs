@@ -106,15 +106,10 @@ namespace Receiver_server
         }
         private static void CallProcedureAsync(double lat, double lon, double course, float speed, int height, int satCount, DateTime dateTime, int vBattery)
         {
-            var host = "141.8.193.201";
-            var user = "mapsense";
-            var password = "sfdh8Gksj3d";
-            var database = "db_mapsense";
-
-            var connectionString = $"Host={host};" +
-                $"User Id={user};" +
-                $"Password={password};" +
-                $"Database={database}";
+            var connectionString = $"Host={ConfigurationManager.AppSettings.Get("db_host")};" +
+                $"Username={ConfigurationManager.AppSettings.Get("db_user")};" +
+                $"Password={ConfigurationManager.AppSettings.Get("db_password")};" +
+                $"Database={ConfigurationManager.AppSettings.Get("db_name")}";
 
             using (NpgsqlConnection conn = new NpgsqlConnection(connectionString))
             {
@@ -124,17 +119,14 @@ namespace Receiver_server
                     $"{lon.ToString(System.Globalization.CultureInfo.InvariantCulture)}," +
                     $"{height}," +
                     $"{speed}," +
-                    $"'{dateTime.ToString("yyyy-MM-dd HH:mm:ss")}'," +
+                    $"'{dateTime}'," +
                     $"{course}," +
                     $"{vBattery}," +
                     $"{satCount});";
-
-                using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
-                {
-                    using var reader = cmd.ExecuteReader();
-                    Console.WriteLine(reader.ToString());
-                }
-
+                
+                using NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
+                using var reader = cmd.ExecuteReader();
+                Console.WriteLine(reader.ToString());
                 conn.Close();
             }
         }
