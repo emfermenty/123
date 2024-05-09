@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZoIS9SK5YQDayl6ByJM8/EJOpWXiXJSqdiHVrpy/50vVzPylcicIWNm/Q3mhXrP3QxsYBTJsDOeNDMYJ7mS00A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\demra\\source\\repos\\receiver\\Receiver_server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\demra\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\demra\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\demra\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
+    "C:\\Users\\demra\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
+    "C:\\Users\\demra\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.0\\system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "C:\\Users\\demra\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0\\system.security.cryptography.protecteddata.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
