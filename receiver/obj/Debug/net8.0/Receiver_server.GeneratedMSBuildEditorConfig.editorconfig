@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Receiver_server
-build_property.ProjectDir = C:\Users\demra\source\repos\receiver\
+build_property.ProjectDir = C:\Users\demra\source\repos\123\receiver\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
